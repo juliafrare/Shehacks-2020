@@ -13,14 +13,15 @@ import {
 } from "react-native";
 
 
-const Begin = props => {
+const Cadastro = props => {
     const [showPassword, setShowPassword] = useState(false);
-    async function makelogin(){
-        props.navigation.navigate("Principal");  
+    
+    async function makereturn(){
+        props.navigation.navigate("Begin");  
     }
 
     async function makecadastro(){
-        props.navigation.navigate("Cadastro");  
+        props.navigation.navigate("Principal");  
     }
 
 return (
@@ -28,15 +29,10 @@ return (
         <SafeAreaView>
             <>
             <View style={[styles.container]}>
-                <View style={[styles.tituloInicio]}>
-                    <Text style={styles.tituloInicioTxt}>Bem vindo{"\n"} ao app!</Text>
+                <View style={styles.tituloInicio}>
+                    <Text style={styles.tituloInicioTxt}>Comece a{"\n"} usar o{"\n"} DailyMind!</Text>
                 </View>
-                <View  style={styles.imagem}>
-                    <Image
-                        style={styles.inicioLogin}
-                        source={require('../imgs/login_11.png')}
-                    />
-                </View>
+                
 
                 <View style={styles.inputWhite}>
                             <TextInput 
@@ -50,7 +46,7 @@ return (
                                 
                             }}
                 
-                                placeholder='Seu Nome'
+                                placeholder='Full Name'
                                 keyboardType='default'
                             />
                 </View>
@@ -65,26 +61,45 @@ return (
                                 fontSize: 16,
                                 
                             }}
-                               
+                            
+                                returnKeyType='done'
+                                keyboardType='default'
+                                placeholder='Email'
+                                keyboardType='default'
+                            />
+                </View>
+
+                <View style={styles.inputWhite}>
+                            <TextInput 
+                             style={{
+                                marginLeft: 8,
+                                width: '80%',
+                                height: '100%',
+                                alignSelf: 'stretch',
+                                flex: 1,
+                                fontSize: 16,
+                                
+                            }}
+                                secureTextEntry={!showPassword}
                                 returnKeyType='done'
                                 keyboardType='default'
                                 placeholder='Senha'
                                 keyboardType='default'
-                                secureTextEntry={!showPassword}
                             />
                 </View>
+
                 <TouchableOpacity
                         style={styles.buttonWhite}
-                        onPress={() => makelogin()}
+                        onPress={() => makecadastro()}
                     >
-                    <Text style={styles.tituloEntrarTxt}>Entrar</Text>
+                    <Text style={styles.tituloEntrarTxt}>Cadastrar</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
                         style={styles.button}
-                        onPress={() => makecadastro()}
+                        onPress={() => makereturn()}
                     >
-                    <Text style={styles.tituloCadastroTxt}>Cadastre-se</Text>
+                    <Text style={styles.tituloCadastroTxt}>Voltar</Text>
                 </TouchableOpacity>
                     
                     
@@ -96,7 +111,7 @@ return (
    
 );
 };
-export default Begin;
+export default Cadastro;
 
 const styles = StyleSheet.create({
 
@@ -130,6 +145,7 @@ const styles = StyleSheet.create({
 
     tituloInicio: {
         top:50,
+        marginBottom: 100,
     },
 
     imagem: {
@@ -150,7 +166,7 @@ const styles = StyleSheet.create({
     },
 
     inputWhite: {
-        
+        marginTop: 10,
         height: 50,
         minWidth: "80%",
         marginBottom: "3%",

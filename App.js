@@ -20,6 +20,7 @@ import Begin from './src/begin';
 import Principal from './src/principal';
 import Sentimentos from './src/sentimentos';
 import Therapists from './src/therapists';
+import Cadastro from './src/cadastro';
 
 const Stack = createStackNavigator();
 
@@ -37,6 +38,7 @@ function App() {
         >
 
           <Stack.Screen name='Begin' component={Begin} />
+          <Stack.Screen name='Cadastro' component={Cadastro} />
           <Stack.Screen name='Principal' component={Principal} />
           <Stack.Screen name='Sentimentos' component={Sentimentos} />
           <Stack.Screen name='Therapists' component={Therapists} />
