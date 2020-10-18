@@ -12,7 +12,7 @@ import {
     TouchableOpacity,
 } from "react-native";
 
-
+import IconsFeather from 'react-native-vector-icons/Feather';
 const Therapists = props => {
     async function goback(){
         props.navigation.navigate("Principal");  
@@ -29,7 +29,7 @@ return (
                             style={styles.button}
                             onPress={() => goback()}
                         >
-                        <Text style={styles.tituloCadastroTxt}>Voltar</Text>
+                         <IconsFeather style={styles.icone} name="arrow-left-circle"/>
                     </TouchableOpacity>
                     <Text style={styles.tituloInicioTxt}>Psicólogos</Text>
                 </View>
@@ -238,6 +238,12 @@ return (
 export default Therapists;
 
 const styles = StyleSheet.create({
+
+    icone:{
+        color: "#7b8d93",
+        fontSize: 25,
+    },
+
     container: {
         flex: 1,
         backgroundColor: "#b3dcf4",
