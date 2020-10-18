@@ -19,7 +19,11 @@ const Principal = props => {
     }
 
     async function marcarSentimentos(){
-        props.navigation.navigate("Sentimentos");  
+        props.navigation.navigate("Sentimentos"); 
+    }
+     
+    async function therapistspage(){
+        props.navigation.navigate("Therapists");  
     }
 
 return (
@@ -68,7 +72,7 @@ return (
 
                     <TouchableOpacity
                             style={styles.button2}
-                            onPress={() => makelogin()}
+                            onPress={() => therapistspage()}
                         >
                         <Text style={styles.tituloBotao}>Procurar psicólogos</Text>
                     </TouchableOpacity>
