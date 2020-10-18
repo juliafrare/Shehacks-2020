@@ -25,6 +25,8 @@ import Historico from './src/historico';
 import Cvv from './src/cvv.js';
 import Perfil from './src/perfil.js';
 import Consulta from './src/consulta.js';
+import SintomasAnsiedade from './src/sintomas_ansiedade.js';
+import SintomasDepressao from './src/sintomas_depressao.js';
 
 const Stack = createStackNavigator();
 
@@ -50,6 +52,8 @@ function App() {
           <Stack.Screen name='Cvv' component={Cvv} />
           <Stack.Screen name='Perfil' component={Perfil} />
           <Stack.Screen name='Consulta' component={Consulta} />
+          <Stack.Screen name='SintomasAnsiedade' component={SintomasAnsiedade} />
+          <Stack.Screen name='SintomasDepressao' component={SintomasDepressao} />
         </Stack.Navigator>
         <StatusBar style="light"  />
       </NavigationContainer>
