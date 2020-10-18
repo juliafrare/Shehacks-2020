@@ -30,7 +30,11 @@ const Principal = props => {
         props.navigation.navigate("Historico");  
     }
 
+    async function navigateCvv(){
+        props.navigation.navigate("Cvv");  
+    }
 
+    
 return (
    
         <SafeAreaView>
@@ -84,7 +88,7 @@ return (
 
                     <TouchableOpacity
                             style={styles.button2}
-                            onPress={() => makelogin()}
+                            onPress={() => navigateCvv()}
                         >
                         <Text style={styles.tituloBotao}>Falar com o CVV</Text>
                     </TouchableOpacity>

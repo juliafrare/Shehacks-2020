@@ -22,6 +22,7 @@ import Sentimentos from './src/sentimentos';
 import Therapists from './src/therapists';
 import Cadastro from './src/cadastro';
 import Historico from './src/historico';
+import Cvv from './src/cvv.js';
 
 const Stack = createStackNavigator();
 
@@ -44,6 +45,7 @@ function App() {
           <Stack.Screen name='Sentimentos' component={Sentimentos} />
           <Stack.Screen name='Therapists' component={Therapists} />
           <Stack.Screen name='Historico' component={Historico} />
+          <Stack.Screen name='Cvv' component={Cvv} />
 
         </Stack.Navigator>
         <StatusBar style="light"  />
