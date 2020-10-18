@@ -19,8 +19,8 @@ const Consulta = props => {
         props.navigation.navigate("Principal");  
     }
     const [isSelected, setSelection] = useState(false);
-
-
+    const [isSelected2, setSelection2] = useState(false);
+    const [isSelected3, setSelection3] = useState(false);
 return (
    
         <SafeAreaView>
@@ -57,16 +57,16 @@ return (
                     </View>
                     <View style={styles.checkboxContainer}>
                         <CheckBox
-                        value={isSelected}
-                        onValueChange={setSelection}
+                        value={isSelected2}
+                        onValueChange={setSelection2}
                         style={styles.checkbox}
                         />
                         <Text style={styles.label}>Quarrta 21/10, 10:00</Text>
                     </View>
                     <View style={styles.checkboxContainer}>
                         <CheckBox
-                        value={isSelected}
-                        onValueChange={setSelection}
+                        value={isSelected3}
+                        onValueChange={setSelection3}
                         style={styles.checkbox}
                         />
                         <Text style={styles.label}>Sábado 24/10, 11:00</Text>
