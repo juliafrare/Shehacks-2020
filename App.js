@@ -17,7 +17,7 @@ import { StyleSheet, SafeAreaView } from "react-native";
 
 
 import Begin from './src/begin';
-
+import Principal from './src/principal';
 const Stack = createStackNavigator();
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
         >
 
           <Stack.Screen name='Begin' component={Begin} />
-         
+          <Stack.Screen name='Principal' component={Principal} />
           
         </Stack.Navigator>
         <StatusBar style="light"  />

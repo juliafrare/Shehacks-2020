@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef, cloneElement } from "react";
 
-import {  Form } from 'react-native-autofocus';
+import { Form } from 'react-native-autofocus';
 
 import {Image, TextInput} from 'react-native';
 
@@ -9,11 +9,14 @@ import {
     SafeAreaView,
     StyleSheet,
     Text,
+    TouchableOpacity,
 } from "react-native";
 
 
 const Begin = props => {
-
+    async function makelogin(){
+        props.navigation.navigate("Principal");  
+    }
 
 return (
    
@@ -43,7 +46,7 @@ return (
                             }}
                 
                                 placeholder='Seu Nome'
-                                keyboardType='name'
+                                keyboardType='default'
                             />
                 </View>
                 <View style={styles.inputWhite}>
@@ -57,13 +60,28 @@ return (
                                 fontSize: 16,
                                 
                             }}
-                
+                               
+                                returnKeyType='done'
+                                keyboardType='default'
                                 placeholder='Senha'
-                                keyboardType='name'
+                                keyboardType='default'
                             />
                 </View>
+                <TouchableOpacity
+                        style={styles.buttonWhite}
+                        onPress={() => makelogin()}
+                    >
                     <Text style={styles.tituloEntrarTxt}>Entrar</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                        style={styles.button}
+                        onPress={() => makelogin()}
+                    >
                     <Text style={styles.tituloCadastroTxt}>Cadastre-se</Text>
+                </TouchableOpacity>
+                    
+                    
             </View>
                
             
@@ -75,6 +93,16 @@ return (
 export default Begin;
 
 const styles = StyleSheet.create({
+
+    buttonWhite: {
+		height: 50,
+        minWidth: "90%",
+        marginBottom: 10,
+        // paddingLeft: 15,
+        justifyContent: "center",
+        alignItems: "center",	
+    },
+    
     container: {
         flex: 1,
         backgroundColor: "#b3dcf4",
