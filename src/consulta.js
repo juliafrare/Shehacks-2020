@@ -61,7 +61,7 @@ return (
                         onValueChange={setSelection2}
                         style={styles.checkbox}
                         />
-                        <Text style={styles.label}>Quarrta 21/10, 10:00</Text>
+                        <Text style={styles.label}>Quarta 21/10, 10:00</Text>
                     </View>
                     <View style={styles.checkboxContainer}>
                         <CheckBox

@@ -29,7 +29,7 @@ return (
             <>
             <View style={[styles.container]}>
                 <View style={[styles.tituloInicio]}>
-                    <Text style={styles.tituloInicioTxt}>Bem vindo{"\n"} ao app!</Text>
+                    <Text style={styles.tituloInicioTxt}>Bem vindo{"\n"} ao DailyMind!</Text>
                 </View>
                 <View  style={styles.imagem}>
                     <Image

@@ -22,7 +22,7 @@ const Principal = props => {
         props.navigation.navigate("Sentimentos"); 
     }
 
-    async function therapistspage(){
+    async function therapistsPage(){
         props.navigation.navigate("Therapists");  
     }
 
@@ -32,6 +32,10 @@ const Principal = props => {
 
     async function navigateCvv(){
         props.navigation.navigate("Cvv");  
+    }
+
+    async function marcarSintomas(){
+        props.navigation.navigate("SintomasAnsiedade");  
     }
 
     
@@ -57,7 +61,7 @@ return (
 
                     <TouchableOpacity
                             style={styles.button}
-                            onPress={() => makelogin()}
+                            onPress={() => marcarSintomas()}
                         >
                         <IconsFeather style={styles.icone} name="plus-circle"/>
                         <Text style={styles.tituloEntrarTxt}>Sintomas</Text>
@@ -81,7 +85,7 @@ return (
 
                     <TouchableOpacity
                             style={styles.button2}
-                            onPress={() => therapistspage()}
+                            onPress={() => therapistsPage()}
                         >
                         <Text style={styles.tituloBotao}>Procurar psicólogos</Text>
                     </TouchableOpacity>

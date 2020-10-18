@@ -21,7 +21,7 @@ import {
 
 import IconsFeather from 'react-native-vector-icons/Feather';
 
-const Sentimentos = props => {
+const SintomasDepressao = props => {
     async function pronto(){
         props.navigation.navigate("Principal");  
     }
@@ -37,6 +37,7 @@ return (
             <View style={[styles.container]}>
                 <View style={[styles.tituloInicio]}>
                     <Text style={styles.tituloInicioTxt}>Como você está se sentindo hoje?</Text>
+                    <Text style={styles.tituloEntrarTxt}>Sintomas de Depressão</Text>
                 </View>
                 <View style={styles.checkboxContainer}>
                 
@@ -47,7 +48,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Feliz</Text>
+                            <Text style={styles.tituloEntrarTxt}>Desânimo</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -57,7 +58,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Triste</Text>
+                            <Text style={styles.tituloEntrarTxt}>Desinteresse</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -67,7 +68,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Neutro</Text>
+                            <Text style={styles.tituloEntrarTxt}>Cansaço</Text>
                         </TouchableHighlight>
                     </View>
                  
@@ -82,7 +83,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Ansioso</Text>
+                            <Text style={styles.tituloEntrarTxt}>Falta de concentração</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -92,7 +93,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Confiante</Text>
+                            <Text style={styles.tituloEntrarTxt}>Auto-estima baixa</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -102,7 +103,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Tranquilo</Text>
+                            <Text style={styles.tituloEntrarTxt}>Tristeza Constante</Text>
                         </TouchableHighlight>
                     </View>
                  
@@ -117,7 +118,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Estressado</Text>
+                            <Text style={styles.tituloEntrarTxt}>etc</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -127,7 +128,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Irritado</Text>
+                            <Text style={styles.tituloEntrarTxt}>etc</Text>
                         </TouchableHighlight>
                     </View>
                     <View style={styles.inputWhite}>
@@ -137,7 +138,7 @@ return (
                                 activeOpacity={0.6}
                                 underlayColor="#00FF00"
                             >
-                            <Text style={styles.tituloEntrarTxt}>Furioso</Text>
+                            <Text style={styles.tituloEntrarTxt}>etc</Text>
                         </TouchableHighlight>
                     </View>
                  
@@ -162,7 +163,7 @@ return (
    
 );
 };
-export default Sentimentos;
+export default SintomasDepressao;
 
 const styles = StyleSheet.create({
     
@@ -197,8 +198,8 @@ const styles = StyleSheet.create({
 
     tituloEntrarTxt: {
         color: "#7b8d93",
-        fontSize: 18,
-        textAlign: "center",
+        textAlign: 'center',
+        fontSize: 16,
     },
 
     buttonWhite: {
@@ -237,6 +238,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
     },
+
 
 
 });
