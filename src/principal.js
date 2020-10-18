@@ -21,10 +21,15 @@ const Principal = props => {
     async function marcarSentimentos(){
         props.navigation.navigate("Sentimentos"); 
     }
-     
+
     async function therapistspage(){
         props.navigation.navigate("Therapists");  
     }
+
+    async function navigateHistorico(){
+        props.navigation.navigate("Historico");  
+    }
+
 
 return (
    
@@ -58,7 +63,7 @@ return (
                <View style={styles.viewCinza}>
                     <TouchableOpacity
                             style={styles.button2}
-                            onPress={() => makelogin()}
+                            onPress={() => navigateHistorico()}
                         >
                         <Text style={styles.tituloBotao}>Histórico</Text>
                     </TouchableOpacity>
