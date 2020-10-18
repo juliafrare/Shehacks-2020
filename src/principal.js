@@ -18,6 +18,10 @@ const Principal = props => {
         props.navigation.navigate("Begin");  
     }
 
+    async function therapistspage(){
+        props.navigation.navigate("Therapists");  
+    }
+
 return (
    
         <SafeAreaView>
@@ -64,7 +68,7 @@ return (
 
                     <TouchableOpacity
                             style={styles.button2}
-                            onPress={() => makelogin()}
+                            onPress={() => therapistspage()}
                         >
                         <Text style={styles.tituloBotao}>Procurar psicólogos</Text>
                     </TouchableOpacity>
