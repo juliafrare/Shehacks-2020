@@ -18,6 +18,8 @@ import { StyleSheet, SafeAreaView } from "react-native";
 
 import Begin from './src/begin';
 import Principal from './src/principal';
+import Sentimentos from './src/sentimentos';
+
 const Stack = createStackNavigator();
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
 
           <Stack.Screen name='Begin' component={Begin} />
           <Stack.Screen name='Principal' component={Principal} />
+          <Stack.Screen name='Sentimentos' component={Sentimentos} />
           
         </Stack.Navigator>
         <StatusBar style="light"  />

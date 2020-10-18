@@ -18,6 +18,10 @@ const Principal = props => {
         props.navigation.navigate("Begin");  
     }
 
+    async function marcarSentimentos(){
+        props.navigation.navigate("Sentimentos");  
+    }
+
 return (
    
         <SafeAreaView>
@@ -32,7 +36,7 @@ return (
                     
                     <TouchableOpacity
                             style={styles.button}
-                            onPress={() => makelogin()}
+                            onPress={() => marcarSentimentos()}
                         >
                         <IconsFeather style={styles.icone} name="plus-circle"/>
                         <Text style={styles.tituloEntrarTxt}>Sentimentos</Text>
