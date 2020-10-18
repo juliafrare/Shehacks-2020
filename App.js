@@ -23,6 +23,8 @@ import Therapists from './src/therapists';
 import Cadastro from './src/cadastro';
 import Historico from './src/historico';
 import Cvv from './src/cvv.js';
+import Perfil from './src/perfil.js';
+import Consulta from './src/consulta.js';
 
 const Stack = createStackNavigator();
 
@@ -46,7 +48,8 @@ function App() {
           <Stack.Screen name='Therapists' component={Therapists} />
           <Stack.Screen name='Historico' component={Historico} />
           <Stack.Screen name='Cvv' component={Cvv} />
-
+          <Stack.Screen name='Perfil' component={Perfil} />
+          <Stack.Screen name='Consulta' component={Consulta} />
         </Stack.Navigator>
         <StatusBar style="light"  />
       </NavigationContainer>

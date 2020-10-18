@@ -18,6 +18,10 @@ const Therapists = props => {
         props.navigation.navigate("Principal");  
     }
 
+    async function goprofile(){
+        props.navigation.navigate("Perfil");  
+    }
+
 
 return (
    
@@ -34,7 +38,10 @@ return (
                     <Text style={styles.tituloInicioTxt}>Psicólogos</Text>
                 </View>
 
-                <View style={styles.inputWhite}>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -49,8 +56,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -65,8 +75,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -81,8 +94,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -97,8 +113,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -113,8 +132,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -129,8 +151,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -145,8 +170,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -161,8 +189,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -177,8 +208,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -193,8 +227,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -209,8 +246,11 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
-                <View style={styles.inputWhite}>
+                </TouchableOpacity>
+                <TouchableOpacity
+                        style={styles.inputWhite}
+                        onPress={() => goprofile()}
+                    >
                             <Text 
                              style={{
                                 width: '80%',
@@ -225,7 +265,7 @@ return (
                                 source={require('../imgs/images.png')}
                             />
                             &nbsp;&nbsp;Nome</Text>
-                </View>
+                </TouchableOpacity>
             </View>
             
             </>
